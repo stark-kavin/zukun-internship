@@ -18,7 +18,7 @@ body {
     background-image: url(./peakpx.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: end;
+    background-position: right;
 }
 
 .parent-main-container {
@@ -336,4 +336,29 @@ body {
     overflow: hidden;
     transition: .5s height, .5s padding, 0s opacity .5s;
     transition-timing-function: ease-in-out;
+}
+
+@media (max-width:850px) {
+    :root{
+        font-size: 12px;
+    }
+    body{
+        background-position: center;
+        background-color: red;
+    }
+
+    .parent-main-container .main-container{
+        flex-direction: column;
+
+        div:first-child{
+            flex: unset;
+            height: 50%;
+        }
+        div:last-child{
+            flex: unset;
+            height: 50%;
+            
+        }
+    }
+
 }
