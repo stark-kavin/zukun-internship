@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intership</title>
+    <link rel="stylesheet" href="./index-assets/style.css">
+</head>
+
+<body>
+    <div class="parent-main-container">
+        <div class="main-container">
+            <div class="profile">
+                <div class="name-c">
+                    <div class="name ">
+                        <div class="name1 ">Kavin</div>
+                        <div class="name2 " >Prasath</div>
+                    </div>
+                </div>
+
+                <ul>
+                    <li>
+                        <div class="key">Intership by :</div>
+                        <div class="value">Hubsem Intership</div>
+                    </li>
+                    <li>
+                        <div class="key">Topic :</div>
+                        <div class="value">Frontend Web Development</div>
+                    </li>
+                    <li>
+                        <div class="key">Duration :</div>
+                        <div class="value">~ 1 Month</div>
+                    </li>
+                    <li>
+                        <div class="key">Date :</div>
+                        <div class="value">Sep 2024</div>
+                    </li>
+                    <li>
+                        <div class="key">Place  :</div>
+                        <div class="value">Chennai</div>
+                    </li>
+                    
+                </ul>
+
+            </div>
+            <div class="main-content">
+                <ul class="options">
+                    <li class="option">
+                        <label for="op1">
+                            Projects
+                            <input type="radio" checked onclick="check_box_change('projects')" name="options" id="op1">
+                        </label>
+                    </li>
+                    <li class="option">
+                        <label for="op2">
+                            Certificates
+                            <input type="radio" onclick="check_box_change('certificate')" value="certificate" name="options" id="op2">
+                        </label>
+                    </li>
+                </ul>
+
+                <div class="content-container">
+                    <section class="projects container">
+                        <a class="project" href="./specs-vibe-main/index.html">
+                            <img src="./specs-vibe-main/images/logo.png" alt="">
+                            <div class="name">SpecsVibe</div>
+                            <div class="bg" style="background-image: url(./specs-vibe-main/images/logo.png);"></div>
+                        </a>
+                        <a class="project" href="./millan-detail/index.html">
+                            <img src="./millan-detail/images/milanDigitalMedicsLogo.png" alt="">
+                            <div class="name">Millan Detail Medics</div>
+                            <div class="bg" style="background-image: url(./millan-detail/images/milanDigitalMedicsLogo.png);"></div>
+                        </a>
+                    </section>
+                    <section class="certificate container hidden">
+                        Didn't Recive one yet...
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./index-assets/script.js"></script>
+</body>
+
+</html>
