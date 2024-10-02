@@ -127,6 +127,7 @@ body {
 
         display: grid;
         row-gap: 1rem;
+        padding-bottom: .5rem;
 
         li {
             display: grid;
