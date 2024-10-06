@@ -16,7 +16,7 @@
                 <div class="name-c">
                     <div class="name ">
                         <div class="name1 ">Kavin</div>
-                        <div class="name2 " >Prasath</div>
+                        <div class="name2 ">Prasath</div>
                     </div>
                 </div>
 
@@ -38,12 +38,12 @@
                         <div class="value">Sep 2024</div>
                     </li>
                     <li>
-                        <div class="key">Place  :</div>
+                        <div class="key">Place :</div>
                         <div class="value">Chennai</div>
                     </li>
                 </ul>
             </div>
-            
+
             <div class="main-content">
                 <ul class="options">
                     <li class="option">
@@ -55,24 +55,29 @@
                     <li class="option">
                         <label for="op2">
                             Certificates
-                            <input type="radio" onclick="check_box_change('certificate')" value="certificate" name="options" id="op2">
+                            <input type="radio" onclick="check_box_change('certificate')" value="certificate"
+                                name="options" id="op2">
                         </label>
                     </li>
                 </ul>
 
                 <div class="content-container">
+                    
                     <section class="projects container">
                         <a class="project" href="./specs-vibe-main/index.html">
                             <img src="./specs-vibe-main/images/logo.png" alt="">
                             <div class="name">SpecsVibe</div>
                             <div class="bg" style="background-image: url(./specs-vibe-main/images/logo.png);"></div>
                         </a>
-                        <a class="project" href="./millan-detail/login-page/index.html">
+                        <div class="project" onclick="document.querySelector('.pop-up').dataset.show = 'true';">
                             <img src="./millan-detail/landing-page/images/milanDigitalMedicsLogo.png" alt="">
                             <div class="name">Millan Detail Medics</div>
-                            <div class="bg" style="background-image: url(./millan-detail/landing-page/images/milanDigitalMedicsLogo.png);"></div>
-                        </a>
+                            <div class="bg"
+                                style="background-image: url(./millan-detail/landing-page/images/milanDigitalMedicsLogo.png);">
+                            </div>
+                        </div>
                     </section>
+
                     <section class="certificate container hidden">
                         Not Found :(
                     </section>
@@ -81,6 +86,53 @@
             </div>
         </div>
     </div>
+
+    <!-- Pop Up -->
+
+    <div class="pop-up" data-show="false">
+        <div class="card">
+            <nav>
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                        fill="#e8eaed">
+                        <path
+                            d="m260-520 220-360 220 360H260ZM700-80q-75 0-127.5-52.5T520-260q0-75 52.5-127.5T700-440q75 0 127.5 52.5T880-260q0 75-52.5 127.5T700-80Zm-580-20v-320h320v320H120Z" />
+                    </svg>
+                </div>
+                <div class="head">
+                    Millan Detail Medics
+                </div>
+                <div class="close" onclick="document.querySelector('.pop-up').dataset.show = 'false';">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </div>
+            </nav>
+
+            <div class="all-pages">
+                <a href="./millan-detail/login-page/index.html" class="page">
+                    <div class="name">
+                        Login Page
+                    </div>
+                </a>
+
+                <a href="./millan-detail/create-page/index.html" class="page">
+                    <div class="name">
+                        Signup Page
+                    </div>
+                </a>
+
+                <a href="./millan-detail/landing-page/index.html" class="page">
+                    <div class="name">
+                        Landing Page
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Pop Up -->
+
     <script src="./index-assets/script.js"></script>
 </body>
 
