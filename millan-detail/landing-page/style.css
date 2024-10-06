@@ -17,6 +17,7 @@ button {
 body {
     background-color: rgba(0, 0, 0, 0.738);
     font-family: sans-serif;
+    user-select: none;
 }
 
 nav {
