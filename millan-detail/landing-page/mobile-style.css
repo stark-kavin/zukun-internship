@@ -251,6 +251,27 @@
         }
     }
 
+
+section.sec-8 {
+
+    .container {
+        width: 90vw;
+        flex-direction: column;
+
+        .s-1 {
+            flex: unset;
+            .head {
+                font-size: 1.5rem;
+            }
+
+            .body {
+                margin-top: .5rem;
+            }
+        }
+    }
+
+}
+
     footer {
         .container {
             width: 80vw;
